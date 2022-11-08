@@ -1,0 +1,166 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+// Components start
+
+// Logo component
+.logo {
+  width: 82px;
+  height: 52px;
+  position: relative;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__title {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    position: static;
+    z-index: 5;
+  }
+  &__icon {
+    position: absolute;
+    left: 10px;
+    bottom: 6px;
+  }
+}
+
+// Navbar component
+.navbar {
+  display: flex;
+  align-items: center;
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 58px;
+    &-item {
+      list-style: none;
+      a {
+        text-decoration: none;
+        font-family: 'Roboto', serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF;
+        &:hover, &:active {
+          background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          text-fill-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+// Button component
+.btn {
+  width: 298px;
+  padding: 16px 0;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+// Components end
+
+
+
+
+ // Main page
+ .main-page {
+
+ }
+
+ // Header component
+ .header {
+   position: relative;
+   z-index: 1;
+   background: #000000;
+   backdrop-filter: blur(2px);
+   padding: 14px 0;
+   &-root {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 660px;
+   }
+   &__designed-by {
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 22px;
+     color: #FFFFFF;
+   }
+   &__container {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+   }
+ }
+ // Banner
+ .banner {
+   background: url("../images/panda.png") no-repeat;
+   background-size: cover;
+   width: 100%;
+   .container {
+     display: flex;
+   }
+   &__item {
+     width: 50%;
+     align-items: center;
+     padding: 46px 0;
+   }
+   &__item_right-side {
+     position: relative;
+     .circle {
+       top: -14px;
+       left: 50px;
+       position: absolute;
+       width: 368px;
+       height: 368px;
+       border-radius: 100%;
+       border: none;
+       background: #FA8340;
+     }
+   }
+   &__title {
+     position: relative;
+     font-weight: 700;
+     font-size: 85px;
+     line-height: 75%;
+     text-align: center;
+     text-transform: uppercase;
+     color: #FFFFFF;
+     z-index: 2;
+     width: 400px;
+     left: 50%;
+     transform: translate(-50%, 0);
+     span {
+       color: #FFEE2E;
+     }
+   }
+   .btn {
+     position: relative;
+     left: 50%;
+     transform: translate(-50%, 0);
+     margin-top: 40px;
+   }
+ }
+
