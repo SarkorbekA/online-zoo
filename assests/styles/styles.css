@@ -918,13 +918,14 @@
     margin: auto;
   }
   .footer{
-    padding: 30px 5px;
+    padding: 20px 7px;
   }
   .footer__items{
     justify-content: space-between;
   }
   .footer__author p{
     text-align: end;
+    font-size: 12px;
   }
   
 }
