@@ -685,7 +685,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin-bottom: 55px;
+    margin-bottom: 30px;
   }
   .footer__items-box{
     display: inline-flex;
@@ -919,9 +919,6 @@
   }
   .footer{
     padding: 20px 7px;
-  }
-  .footer__items{
-    justify-content: space-between;
   }
   .footer__author p{
     text-align: end;
